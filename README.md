@@ -7,6 +7,8 @@ deploy page: https://rafaelortiz97.github.io/CC_tickets/welcome-page.html
 original repository: https://github.com/Coop98/Projects01
 
 ## Screenshots
+![Screenshot 2023-08-21 191425](https://github.com/RafaelOrtiz97/CC_tickets/assets/106719415/17e8d5d5-7b8b-491b-847e-451e2b7b8d6b)
+![Screenshot 2023-08-21 191442](https://github.com/RafaelOrtiz97/CC_tickets/assets/106719415/759719fb-abbb-4253-8bf9-07b5069c16f4)
 
 
 
