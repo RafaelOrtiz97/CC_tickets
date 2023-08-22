@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" href="./assets/css/bulma-rtl.css">
+    <link rel="stylesheet" href="./assets/css/bulma-rtl.css.map">
+    <link rel="stylesheet" href="./assets/css/bulma-rtl.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma.css">
+    <link rel="stylesheet" href="./assets/css/bulma.css.map">
+    <link rel="stylesheet" href="./assets/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <ul>
+                <li><a href="#tickets">My Tickets</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="./welcome-page.html">Home</a></li>
+            </ul>
+        </div>
+        <div id="logo">
+            <img src="./assets/movie-ticket-transparent-25.png" alt="logo">
+        </div>
+        <form id="form">
+            <input type="text" placeholder="search..." id="search" class="search">
+        </form>
+    </header>
+    <main id="main">
+    </main>
+    <footer>
+        <div class="calendar" id="calendar">
+            <div class="calendar-header">
+                <span class="month-picker" id="month-picker">August</span>
+                <span class="movie-selected" id="movie-selected">Movie</span>
+            </div>
+            <div class="calendar-body">
+                <div class="calendar-week-days">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <form id="storage"></form>
+                    <div class="calendar-days" id="calendar-days"></div>
+                    <div class="divider"></div>
+                    <div class="time" id="time"></div>
+                    <input type="submit" id="submit" onclick="modal()">
+                </form>
+                <div class="calendar-footer">
+                    <div class="date-time-value">
+                        <div class="title"></div>
+                        <div class="timeSlot" id="timeSlot"></div>
+                        <div class="date" id="date"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="calendar-header">
+                Ticket Purchased
+            </div>
+            <div id="tickets">
+                No Tickets in Cart. <br><br> Please Select a movie, day, and time. <br>
+                <img class="logoBot" src="./assets/movie-ticket-transparent-25.png" alt="logo">
+            </div>
+        </div>
+    </footer>
+    <div id="foot">
+            <ul>
+                <li><a href="#tickets">My Tickets</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="./welcome-page.html">Home</a>
+            </ul>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-5 px-5">
+            <h3 id="title mb-6"></h3>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

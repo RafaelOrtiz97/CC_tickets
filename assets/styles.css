@@ -1,0 +1,304 @@
+:root {
+    --primary: #F4B942;
+    --secondary: #EFF2F1;
+    --third: #131200;
+    --good: #60992D;
+    --bad: #FE4A49;
+    --ok: rgb(255, 213, 0);
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: right;
+    background-color: var(--third);
+}
+
+li a {
+    display: block;
+    color: var(--secondary);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: var(--primary);
+}
+
+body {
+    background-color: var(--primary);
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+header {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    width: 100%;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    padding: 8px;
+    margin: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movieBtn {
+    background-color: var(--primary);
+    position: absolute;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.movieBtn:hover {
+    background-color: var(--third);
+    color: var(--secondary);
+}
+
+.movies {
+    width: 300px;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.movies img {
+    width: 100%;
+}
+
+.movie-info {
+    color: var(--third);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px 10px;
+}
+
+.movie-info span {
+    background-color: var(--good);
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.good {
+    background-color: var(--good);
+}
+
+.movie-info span.ok {
+    background-color: var(--ok);
+}
+
+.movie-info span.bad {
+    background-color: var(--bad);
+}
+
+.movie-info h3 {
+    margin-top: 0px;
+}
+
+.overview {
+    position: absolute;
+    background-color: var(--third);
+    color: var(--secondary);
+    padding: 10px;
+    max-height: 100%;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in;
+}
+
+.movies:hover .overview{
+    transform: translateY(-101%);
+}
+
+
+#logo img{
+height: 65px;
+}
+
+
+#foot li{
+    background-color: var(--primary);
+    
+}
+
+.calendar {
+    height: 492px;
+    width: 300px;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+
+.calendar-header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: var(--secondary);
+    padding: 10px;
+}
+
+.calendar-body {
+    pad: 10px;
+}
+
+.calendar-week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: var(--third);
+    margin-left: 5px;
+}
+
+.calendar-week-days div {
+    display: gird;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: var(--third);
+}
+
+.calendar-days, .time {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.calendar-days button, .time button{
+    width: 37px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30%;
+}
+
+.time button {
+    width: 89px;
+    border-radius: 5px;
+}
+
+.month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.month-picker:hover {
+    background-color: var(--secondary);
+    color: var(--third);
+}
+
+.calendar-footer {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-days button:hover, .time button:hover {
+    background-color: var(--primary);
+    color: var(--third);
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+}
+
+.date-time-value {
+    text-align: center;
+    display: flex;
+}
+
+.divider {
+    height: 20px;
+}
+
+#submit {
+    background-color: var(--primary);
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+    width: 265px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tickets {
+    text-align: center;
+    margin: 20px;
+}
+
+.logoBot {
+    width: 100px;
+    margin: 50px;
+}
+
+.close {
+    background-color: var(--primary);
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+    width: 80px;
+}
+
+
+@media (max-width: 690px)  {
+    /* style for screens with width up to 600px */
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+}
