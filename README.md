@@ -3,6 +3,9 @@ Movie theater app that allows you to select a movie, time, and a day to purchase
 Greated with a home page that displays a movie quote using api.
 When entering site the user is shown movie data used from api displaying poster ratings and movie title.
 
+deploy page: https://rafaelortiz97.github.io/CC_tickets/welcome-page.html
+original repository: https://github.com/Coop98/Projects01
+
 ## Screenshots
 
 
